@@ -1,0 +1,335 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Custom login page styles */
+.login-bg {
+  min-height: 100vh;
+  background: #f6f3f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.login-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.login-header {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.butterfly-img {
+  width: 160px;
+  height: 120px;
+  object-fit: contain;
+  transform: rotate(-15deg);
+  margin-bottom: -30px;
+  margin-left: 10px;
+}
+
+.psychl-title {
+  font-size: 4rem;
+  font-family: serif;
+  font-weight: 500;
+  color: #181818;
+  margin: 0;
+}
+
+.psychl-subtitle {
+  color: #b23ec4;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.login-frame {
+  background: #e3e2e4;
+  border: 2px solid #bfa6d6;
+  border-radius: 28px;
+  box-shadow: 0 4px 24px 0 #bfa6d6;
+  padding: 2.5rem 3.5rem 2.5rem 3.5rem;
+  margin-top: 1.5rem;
+  min-width: 420px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.login-frame::before {
+  content: '';
+}
+
+.login-label {
+  font-size: 1.2rem;
+  font-family: serif;
+  color: #181818;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  display: block;
+  width: 90%;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-input {
+  width: 90%;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: 1.5px solid #e3e2e4;
+  font-size: 1.2rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.login-input:focus {
+  border: 1.5px solid #bfa6d6;
+}
+
+.login-btns {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.login-btn, .register-btn {
+  background: #bfa6d6;
+  color: #181818;
+  border: none;
+  border-radius: 20px;
+  padding: 0.7rem 2.2rem;
+  font-size: 1.3rem;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.login-btn:hover, .register-btn:hover {
+  background: #b23ec4;
+  color: #fff;
+}
+
+.login-form {
+  background: #fff;
+  border-radius: 24px;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  box-shadow: 0 2px 8px 0 #e3e2e4;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 340px;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .login-frame {
+    min-width: 90vw;
+    padding: 1rem;
+  }
+  .login-form {
+    min-width: 70vw;
+    padding: 1rem;
+  }
+  .login-header {
+    margin-top: 20px;
+  }
+}
+
+.role-frame {
+  background: #ece8ef;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px 0 #bfa6d6;
+  padding: 2.5rem 3.5rem 2.5rem 3.5rem;
+  margin-top: 1.5rem;
+  min-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.role-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.role-label {
+  font-size: 2rem;
+  font-family: serif;
+  color: #181818;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  width: 100%;
+}
+
+.role-input {
+  width: 90%;
+  max-width: 320px;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: 1.5px solid #e3e2e4;
+  font-size: 1.2rem;
+  outline: none;
+  transition: border 0.2s;
+  text-align: center;
+}
+.role-input:focus {
+  border: 1.5px solid #bfa6d6;
+}
+
+.register-title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: serif;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.register-frame {
+  background: #ece8ef;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px 0 #bfa6d6;
+  padding: 2.5rem 3.5rem 2.5rem 3.5rem;
+  margin: 0 auto;
+  min-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-form {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 1.2rem 1.5rem;
+  width: 100%;
+}
+
+.register-label {
+  font-size: 1.3rem;
+  font-family: serif;
+  color: #181818;
+  align-self: center;
+  justify-self: end;
+}
+
+.register-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1.5px solid #b23ec4;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border 0.2s;
+  margin-bottom: 0.2rem;
+}
+.register-input:focus {
+  border: 1.5px solid #b23ec4;
+}
+
+.register-btn {
+  grid-column: 1 / span 2;
+  background: #bfa6d6;
+  color: #181818;
+  border: none;
+  border-radius: 20px;
+  padding: 0.7rem 2.2rem;
+  font-size: 1.3rem;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin: 0 auto;
+  margin-top: 1.2rem;
+}
+.register-btn:hover {
+  background: #b23ec4;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .register-frame {
+    min-width: 90vw;
+    padding: 1rem;
+  }
+  .register-form {
+    grid-template-columns: 1fr;
+  }
+  .register-label {
+    justify-self: start;
+  }
+  .register-btn {
+    grid-column: 1;
+  }
+}
+
+input, .login-input, .register-input, select, .role-input, textarea {
+  color: #181818 !important;
+  background-color: #EBE9E9 !important;
+  border: 1.5px solid #e3e2e4;
+}
+
+input:-webkit-autofill,
+.login-input:-webkit-autofill,
+.register-input:-webkit-autofill,
+select:-webkit-autofill,
+.role-input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-text-fill-color: #181818 !important;
+  background-color: #EBE9E9 !important;
+}
